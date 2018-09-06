@@ -226,12 +226,6 @@
     
 
 
-    <!-- http://github.com/edinaldomed/eci046/universidade.owl#Professor -->
-
-    <owl:NamedIndividual rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#Professor"/>
-    
-
-
     <!-- http://github.com/edinaldomed/eci046/universidade.owl#Professor001 -->
 
     <owl:NamedIndividual rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#Professor001">

@@ -64,6 +64,15 @@
     
 
 
+    <!-- http://github.com/edinaldomed/eci046/universidade.owl#ementa -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#ementa">
+        <rdfs:domain rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Disciplina"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/edinaldomed/eci046/universidade.owl#idade -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#idade">
@@ -88,6 +97,24 @@
     <owl:DatatypeProperty rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#nome">
         <rdfs:domain rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Disciplina"/>
         <rdfs:domain rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/edinaldomed/eci046/universidade.owl#numero_servidor -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#numero_servidor">
+        <rdfs:domain rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Professor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/edinaldomed/eci046/universidade.owl#semestre -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#semestre">
+        <rdfs:domain rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Disciplina"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -190,6 +217,15 @@
     
 
 
+    <!-- http://github.com/edinaldomed/eci046/universidade.owl#Gestão -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#Gestão">
+        <rdf:type rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Gestao"/>
+        <universidade:semestre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turma 02 - Segundo semestre de 2018</universidade:semestre>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://github.com/edinaldomed/eci046/universidade.owl#Professor -->
 
     <owl:NamedIndividual rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#Professor"/>
@@ -201,6 +237,7 @@
     <owl:NamedIndividual rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#Professor001">
         <rdf:type rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Professor"/>
         <universidade:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renato</universidade:nome>
+        <universidade:numero_servidor xml:lang="pt">000256</universidade:numero_servidor>
         <universidade:sexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">masculino</universidade:sexo>
         <universidade:sobrenome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabiano</universidade:sobrenome>
     </owl:NamedIndividual>
@@ -211,6 +248,8 @@
 
     <owl:NamedIndividual rdf:about="http://github.com/edinaldomed/eci046/universidade.owl#Turma2018_2">
         <rdf:type rdf:resource="http://github.com/edinaldomed/eci046/universidade.owl#Ontologia"/>
+        <universidade:ementa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construir ontologias no software protege</universidade:ementa>
+        <universidade:semestre xml:lang="pt">2. Semestre de 2018</universidade:semestre>
     </owl:NamedIndividual>
     
 
